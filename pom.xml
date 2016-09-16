@@ -14,7 +14,6 @@
         <module>auction-dao-api</module>
         <module>auction-dao-impl</module>
         <module>auction-service</module>
-        <module>auction-main</module>
     </modules>
 
     <properties>

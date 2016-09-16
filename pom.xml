@@ -17,7 +17,6 @@
         <module>auction-mvc</module>
         <module>auction-war</module>
         <module>auction-main</module>
-        <module>auction-boot</module>
     </modules>
 
     <properties>

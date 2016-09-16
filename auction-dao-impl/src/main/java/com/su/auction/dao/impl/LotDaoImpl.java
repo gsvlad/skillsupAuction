@@ -2,10 +2,12 @@ package com.su.auction.dao.impl;
 
 import com.su.auction.dao.api.LotDao;
 import com.su.domain.Lot;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class LotDaoImpl implements LotDao {
 
     private List<Lot> lots = new ArrayList<Lot>();

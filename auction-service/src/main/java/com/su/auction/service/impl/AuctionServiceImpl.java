@@ -7,16 +7,21 @@ import com.su.domain.Item;
 import com.su.domain.Lot;
 import com.su.domain.User;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 @Setter
 public class AuctionServiceImpl implements AuctionService {
 
+    @Autowired
     private LotDao lotDao;
+    @Autowired
     private UserDao userDao;
 
     @Override

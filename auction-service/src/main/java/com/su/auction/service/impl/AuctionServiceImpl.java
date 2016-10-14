@@ -1,5 +1,6 @@
 package com.su.auction.service.impl;
 
+import com.su.auction.dao.api.ItemDao;
 import com.su.auction.dao.api.LotDao;
 import com.su.auction.dao.api.UserDao;
 import com.su.auction.service.AuctionService;
@@ -23,6 +24,8 @@ public class AuctionServiceImpl implements AuctionService {
     private LotDao lotDao;
     @Autowired
     private UserDao userDao;
+    @Autowired
+    private ItemDao itemDao;
 
     @Override
     public Lot createLot(Item item, User user, BigDecimal startPrice) {
@@ -45,5 +48,15 @@ public class AuctionServiceImpl implements AuctionService {
     @Override
     public List<User> getUsers() {
         return userDao.getAll();
+    }
+
+    @Override
+    public List<Item> getItems() {
+        return itemDao.getAll();
+    }
+
+    @Override
+    public void soutUsers() {
+        System.out.println("Users: " + userDao.getAll());
     }
 }

@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.su</groupId>
-            <artifactId>auction-dao-impl</artifactId>
+            <artifactId>auction-dao-hibernate</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>

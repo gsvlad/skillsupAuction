@@ -14,4 +14,6 @@ public interface AuctionService {
     Lot createLot(Item item, User user, BigDecimal startPrice);
     List<Lot> getActiveLots();
     List<User> getUsers();
+    List<Item> getItems();
+    void soutUsers();
 }

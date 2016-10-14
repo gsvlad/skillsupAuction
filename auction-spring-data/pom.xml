@@ -9,23 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>auction-main</artifactId>
+    <artifactId>auction-spring-data</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.su</groupId>
-            <artifactId>auction-service</artifactId>
+            <artifactId>auction-dao-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.su</groupId>
-            <artifactId>auction-spring-data</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.10.1.RELEASE</version>
         </dependency>
     </dependencies>
-
 </project>

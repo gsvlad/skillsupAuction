@@ -10,10 +10,10 @@ import java.util.List;
 @Component
 public class LotDaoImpl implements LotDao {
 
-    private List<Lot> lots = new ArrayList<Lot>();
+    private List<Lot> lots = new ArrayList<>();
 
     public List<Lot> getAll() {
-        return new ArrayList<Lot>(lots);
+        return new ArrayList<>(lots);
     }
 
     public void add(Lot entity) {

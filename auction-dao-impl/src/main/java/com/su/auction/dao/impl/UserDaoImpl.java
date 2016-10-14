@@ -15,9 +15,9 @@ public class UserDaoImpl implements UserDao {
 
     @PostConstruct
     private void generateSomeUsers() {
-        users.add(new User("buff", "Ben", "Black"));
-        users.add(new User("tim", "Tim", "Tompson"));
-        users.add(new User("jett", "Jeff", "Jefferson"));
+        users.add(new User(1L, "buff", "Ben", "Black", new ArrayList<>()));
+        users.add(new User(2L, "tim", "Tim", "Tompson", new ArrayList<>()));
+        users.add(new User(3L, "jett", "Jeff", "Jefferson", new ArrayList<>()));
     }
 
     public List<User> getAll() {

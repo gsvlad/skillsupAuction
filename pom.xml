@@ -14,10 +14,7 @@
         <module>auction-dao-api</module>
         <module>auction-dao-impl</module>
         <module>auction-service</module>
-        <module>auction-mvc</module>
-        <module>auction-war</module>
         <module>auction-main</module>
-        <module>auction-boot</module>
     </modules>
 
     <properties>
